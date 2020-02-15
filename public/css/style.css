@@ -1,0 +1,140 @@
+.input-group-text {
+    padding: .375rem .4rem;
+}
+.custom-control.custom-switch {
+    padding-left: 1.7rem;
+}
+.custom-switch .custom-control-label::before {
+    left: -1.7rem;
+}
+.custom-switch .custom-control-label::after {
+    left: calc(-1.7rem + 2px);
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #55BF95;
+    background-color: #55BF95;
+}
+
+/*
+header
+ */
+
+header {
+    background: #D5FFEE;
+    border-bottom: 1px solid #A0BBD1;
+}
+
+.padding-5 {
+    padding-right: 5px!important;
+    padding-left: 5px!important;
+}
+
+.padding-5:last-child {
+    padding-right: 2px!important;
+}
+
+.padding-2 {
+    padding-right: 2px!important;
+    padding-left: 2px!important;
+}
+
+.btn-primary {
+    background: #55BF95;
+    border: 1px solid #B1FFE0;
+}
+
+.btn-primary:hover {
+    background: #269F6B;
+    border: 1px solid #269F6B;
+}
+
+.btn-danger {
+    background: #FFC8B1;
+    border: 1px solid #FFC8B1;
+}
+
+.clear-margin-right {
+    margin-right: 0;
+}
+/*
+
+Radio buttons
+
+ */
+.wrap__colors {
+    display: flex;
+}
+
+.color-radio {
+    display: none;
+}
+
+.radio__input {
+    position: relative;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.radio__label {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    opacity: .7;
+}
+
+.color-radio:checked + .radio__label {
+    border: 1px solid black;
+    opacity: 1;
+    box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.74);
+    -webkit-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.74);
+    -moz-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.74);
+}
+/*
+
+End radio buttons
+
+ */
+.clear__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: white;
+    font-size: 7px;
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+/*
+Секция со ссылкой
+ */
+.color {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    margin-top: 0.35rem!important;
+    opacity: .8;
+}
+.color-blue {
+    background: blue;
+}
+
+.link {
+    border-bottom: 1px dotted #A0BBD1;
+}
+
+@media (max-width: 575px) {
+    .padding-5, .link {
+        padding-left: 15px!important;
+    }
+}
+
+@media (max-width: 414px) {
+    .content {
+        font-size: 0.9em;
+    }
+}

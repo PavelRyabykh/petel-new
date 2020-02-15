@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bb {
+    border: 1px solid red;
+}
+
+header {
+    height: 50px;
+    background: aliceblue;
+}
+.wrap {
+    margin: 0 auto;
+    width: 1260px;
+    height: 100%;
+}
+
+@media (max-width: 1260px) {
+    .wrap {
+        width: 100% !important;
+        height: 100% !important;
+        padding: 0 15px !important;
+    }
+}
+header .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1260px;
+
+}
+
+.buttons {
+    display: flex;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    margin-top: 15px;
+}
+
+main > .wrap > .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted grey;
+}
+
+main > .wrap > .item > .main-content {
+    display: flex;
+}
+main > .wrap > .item:wrap__colors-child(odd) {
+    background: cornsilk;
+}
+main > .wrap > .item:nth-child(even) {
+    background: aliceblue;
+}
+
+main > .wrap > .item > .main-content > .copy {
+    padding: 2px;
+    border: 1px solid grey;
+    background: white;
+}
+
+main > .wrap > .item > .main-content > .color {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+main > .wrap > .item > .main-content > .color.color-blue {
+     background: blue;
+}
+
+main > .wrap > .item > .main-content > .color.color-pink {
+    background: pink;
+}
+
+main > .wrap > .item > .main-content > .color.color-red {
+    background: red;
+}
+
+main > .wrap > .item > .main-content > .color.color-green {
+    background: green;
+}
+
+main > .wrap > .item > .main-content > .color.color-yellow {
+    background: yellow;
+}
+
+main > .wrap > .item > .main-content > .color.color-orange {
+    background: orange;
+}
+
+main > .wrap > .item > .main-content > .link {
+    padding: 2px;
+    border: 1px solid transparent;
+}
+
+.del, .up {
+    width: 25px;
+    background: white;
+    border: 1px solid grey;
+}
+
+.del, .up:hover {
+    cursor: pointer;
+}
+
+.del {
+    margin-right: 5px;
+}
+
+.copy:hover {
+    cursor: pointer;
+}
+
+.copy:active {
+    background: paleturquoise!important;
+}
+
+#input-url {
+    height: 30px;
+    width: 240px;
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.clear__button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background: white;
+    font-size: 7px;
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.classical_button {
+    height: 30px;
+    padding: 2px;
+    margin-right: 5px;
+
+}
+
+.classical_button:last-child {
+    margin-right: 0;
+}
+
+/*
+
+Radio buttons
+
+ */
+.wrap__colors {
+    display: flex;
+}
+
+.color-radio {
+    display: none;
+}
+
+.radio__input {
+    position: relative;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.radio__label {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.color-radio:checked + .radio__label {
+    border: 4px solid black;
+}
+/*
+
+End radio buttons
+
+ */
