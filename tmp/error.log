@@ -1583,3 +1583,8 @@
 Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc2\vendor\core\Router.php
 Строка: 66
 ==================================
+[2020-02-15 15:23:13]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
