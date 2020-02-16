@@ -1,25 +1,24 @@
-var currentColor = 'all';
+var currentFilter = 'all';
 
-function clickToColorHandler(color) {
+function clickToColorHandler(filter) {
     var inputText = document.getElementById("input-url");
     if (inputText.value != '') {
         return;
     }
     reset();
-    currentColor = color;
+    currentFilter = filter;
     document.getElementById('delete-in-header').innerHTML = "Удалить отображаемые";
-    var colors = ['blue', 'red', 'orange', 'yellow', 'green', 'pink'];
 
-    for (var a = 0; a < colors.length; a++) {
-        if(colors[a] == color) continue;
-        var collection = document.getElementsByClassName('item-' + colors[a]);
+    for (var a = 0; a < filters.length; a++) {
+        if(filters[a] == filter) continue;
+        var collection = document.getElementsByClassName('item-' + filters[a]);
         for (var i = 0; i < collection.length; i++) {
             collection[i].style.display = "none";
         }
     }
 }
 
-function clearColorsConfiguration() {
+function clearFiltersConfiguration() {
     var radios = document.getElementsByClassName('color-radio');
 
     for (var x = 0; x < radios.length; x++) {
@@ -30,11 +29,10 @@ function clearColorsConfiguration() {
 }
 
 function reset() {
-    var colors = ['blue', 'red', 'orange', 'yellow', 'green', 'pink'];
-    currentColor = 'all';
+    currentFilter = 'all';
     document.getElementById('delete-in-header').innerHTML = "Удалить все";
-    for (var a = 0; a < colors.length; a++) {
-        var collection = document.getElementsByClassName('item-' + colors[a]);
+    for (var a = 0; a < filters.length; a++) {
+        var collection = document.getElementsByClassName('item-' + filters[a]);
         for (var i = 0; i < collection.length; i++) {
             collection[i].style.display = "flex";
         }

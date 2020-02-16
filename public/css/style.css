@@ -159,3 +159,10 @@ End radio buttons
         font-size: 0.9em;
     }
 }
+
+@media (max-width: 334px) {
+    .admin__filter, .clear__button {
+        width: 37px!important;
+        height: 37px!important;
+    }
+}

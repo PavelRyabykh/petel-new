@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 
+use app\models\Filter;
 use app\models\Url;
 use vendor\core\Auth;
 use vendor\core\Validator;
@@ -14,6 +15,7 @@ class MainController extends AppController
     {
         Auth::faceControl();
         $url = new Url();
+        $filter = new Filter();
 
         if (isset($_SESSION['status'])) {
 
@@ -31,8 +33,11 @@ class MainController extends AppController
         }
 
         $data = $url->findAll();
-        $legacyColors = $this->legacyColors;
-        $this->set(compact('data', 'legacyColors'));
+        $filters = $filter->findAll();
+        foreach ($filters as $filter) {
+            $colors[$filter['filter']] = $filter['color'];
+        }
+        $this->set(compact('data', 'filters', 'colors'));
     }
 
     public function AddUrlAction()
@@ -41,13 +46,13 @@ class MainController extends AppController
         $url = new Url();
         $this->layout = false;
 
-        if (! ($errors = Validator::url($this->post->url)) && Validator::color($this->post->color, $this->legacyColors)) {
+        if (! ($errors = Validator::url($this->post->url)) && $this->post->filter !== null) {
             if($this->post->notformat === 'on') {
                 $url->url = htmlspecialchars($this->post->url);
             } else {
                 $url->url = ahrefer(htmlspecialchars($this->post->url));
             }
-            $url->color = $this->post->color ?? 'blue';
+            $url->filter = $this->post->filter;
         } else {
             $_SESSION['status'] = false;
             $_SESSION['errors'] = $url->errors;

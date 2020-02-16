@@ -17,6 +17,12 @@ class Filter extends Model
         'short_name' => null
     ];
 
+    public function __construct()
+    {
+        parent::__construct();
+        $this->table = Auth::getUser() . '_filters';
+    }
+
     public function add()
     {
         $filter = $this->findOne($this->properties['filter'], 'filter');

@@ -73,14 +73,6 @@ class Validator
         return $errors;
     }
 
-    public static function color($color, $legacyColors)
-    {
-        if (in_array($color, $legacyColors) || is_null($color)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
     private static function validLogin($login)
     {

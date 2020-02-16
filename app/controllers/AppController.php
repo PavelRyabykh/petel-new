@@ -11,7 +11,6 @@ use vendor\core\Registry;
 class AppController extends Controller
 {
     protected $meta = [];
-    protected $legacyColors = ['blue', 'red', 'green', 'pink', 'yellow', 'orange'];
 
     public function __construct($route)
     {

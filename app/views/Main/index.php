@@ -1,3 +1,10 @@
+<script>
+    var filters = [
+    <?php foreach ($filters as $filter): ?>
+     '<?=$filter['filter'] ?>',
+    <?php endforeach ?>
+    ]
+</script>
 <header class="mb-3">
     <div class="container-lg">
         <form method="POST" class="row pt-2" action="/">
@@ -21,15 +28,16 @@
             <!--        Радио-кноки переключения/выбора цветов-->
             <div class="col-md-auto mb-2 padding-5">
                 <div class="wrap__colors">
-                    <?php foreach ($legacyColors as $color): ?>
+                    <?php foreach ($filters as $filter): ?>
                         <div class="radio__input">
-                            <input type="radio" id="radio__<?= $color ?>" class="color-radio" name="color"
-                                   value="<?= $color ?>" onclick="clickToColorHandler('<?= $color ?>')">
-                            <label class="radio__label" for="radio__<?= $color ?>"
-                                   style="background: <?= $color ?>"></label>
+                            <input required type="radio" id="radio__<?= $filter['filter'] ?>" class="color-radio" name="filter"
+                                   value="<?= $filter['filter'] ?>" onclick="clickToColorHandler('<?= $filter['filter'] ?>')">
+                            <label class="radio__label admin__filter" for="radio__<?= $filter['filter'] ?>"
+                                   style="background: <?= $filter['color'] ?>"><span
+                                        class="text__in__filter__admin"><?=$filter['short_name'] ?></span></label>
                         </div>
                     <?php endforeach ?>
-                    <input type="button" class="clear__button" value="CLEAR" onclick="clearColorsConfiguration()">
+                    <input type="button" class="clear__button" value="CLEAR" onclick="clearFiltersConfiguration()">
                 </div>
             </div>
             <div class="col-md-auto mb-2 padding-5">
@@ -50,12 +58,12 @@
     <div id="urls" class="container-lg">
         <?php if (!empty($data)): ?>
             <?php foreach ($data as $url): ?>
-                <div id="item-<?= $url['id'] ?>" class="row pl-1 link flex-nowrap mb-3 pb-2 item item-<?= $url['color'] ?>">
+                <div id="item-<?= $url['id'] ?>" class="row pl-1 link flex-nowrap mb-3 pb-2 item item-<?= $url['filter'] ?>">
                     <div class="col-auto padding-2">
                         <button class="btn-primary" onclick="copyText('<?= $url['id'] ?>')">cp</button>
                     </div>
                     <div class="col-auto padding-2">
-                        <div class="color padding-2 mt-1" style="background: <?= $url['color'] ?>"></div>
+                        <div class="color padding-2 mt-1" style="background: <?=$colors[$url['filter']] ?>"></div>
                     </div>
                     <div class="col-md-10 padding-2">
                         <div id="text-<?= $url['id'] ?>" class="content text-break">
