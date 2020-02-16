@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     Router::add('^up$', ['controller' => 'Up', 'action' => 'index']);
     Router::add('^deluser', ['controller' => 'admin\\Deluser', 'action' => 'index']);
     Router::add('^addfilter', ['controller' => 'admin\\AddFilter', 'action' => 'index']);
+    Router::add('^delfilter', ['controller' => 'admin\\Delfilter', 'action' => 'index']);
 } else {
     Router::add('^$', ['controller' => 'Main', 'action' => 'Index']);
     Router::add('^login$', ['controller' => 'Login', 'action' => 'index']);

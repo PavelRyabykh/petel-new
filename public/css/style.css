@@ -82,13 +82,29 @@ Radio buttons
     height: 40px;
 }
 
-.radio__label {
+.radio__label, .admin__filter {
     content: "";
     width: 40px;
     height: 40px;
     border-radius: 20px;
     position: absolute;
     opacity: .7;
+}
+
+.admin__filter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__in__filter__admin {
+    font-size: 1.2em;
+    color: white;
+    display: inline-block;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+
 }
 
 .color-radio:checked + .radio__label {

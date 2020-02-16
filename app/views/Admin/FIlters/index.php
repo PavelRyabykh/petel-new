@@ -21,8 +21,10 @@
             <?php if(!empty($filters)): ?>
                 <?php foreach($filters as $filter): ?>
                     <li class="list-group-item ml-3 d-flex justify-content-between">
+                        <div class="admin__filter" style="background: <?= $filter['color'] ?>"><span
+                                class="text__in__filter__admin"><?=$filter['short_name'] ?></span></div>
                         <?=$filter['filter'] ?>
-                        <button class="btn-sm btn-danger d-inline" onclick="">Удалить</button>
+                        <button class="btn-sm btn-danger d-inline" onclick="delfilter('<?= $filter['id'] ?>', '<?=$user ?>')">Удалить</button>
                     </li>
                 <?php endforeach ?>
             <?php endif ?>
@@ -37,7 +39,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Добавить workspace</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Добавить фильтр</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -51,7 +53,7 @@
                         <input type="text" name="color" placeholder="Цвет. Например, #ffffff, white" class="form-control">
                     </div>
                     <div class="form-group">
-                        <input type="text" name="short_name" placeholder="Две буквы в кружок" class="form-control">
+                        <input type="text" name="short_name" placeholder="Две или одна буква в кружок" class="form-control">
                         <input type="hidden" name="user" value="<?=$user ?>"
                     </div>
                     <input type="submit" class="btn btn-primary" value="Добавить">
