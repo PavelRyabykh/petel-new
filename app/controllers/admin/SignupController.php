@@ -1,36 +1,16 @@
 <?php
 
 
-namespace app\controllers;
+namespace app\controllers\admin;
 
-
+use app\models\Filter;
 use app\models\Url;
 use app\models\User;
 use vendor\core\Auth;
 use vendor\core\Validator;
 
-class SignupController extends AppController
+class SignupController extends MainAdminController
 {
-    public function indexAction()
-    {
-        Auth::faceControlForAdmin();
-
-        if (isset($_SESSION['status'])) {
-
-            if ($_SESSION['status'] === true) {
-                $successMessage = 'Пользователь успешно добавлен!';
-                unset($_SESSION['status']);
-                $this->set(compact('successMessage'));
-            } else {
-                $errorMessages = $_SESSION['errors'];
-                unset($_SESSION['status']);
-                unset($_SESSION['errors']);
-                $this->set(compact('errorMessages'));
-            }
-
-        }
-    }
-
     public function addUserAction()
     {
         Auth::faceControlForAdmin();
@@ -46,21 +26,24 @@ class SignupController extends AppController
         } else {
             $_SESSION['status'] = false;
             $_SESSION['errors'] = $errors;
-            header('Location: /signup');
+            header('Location: /admin');
             exit();
         }
 
         if ($user->add()) {
             $url = new Url();
+            $filter = new Filter();
             $url->table = $user->login;
+            $filter->table = $user->login . '_filters';
             $url->createTable();
+            $filter->createTable();
             $_SESSION['status'] = true;
-            header('Location: /signup');
+            header('Location: /admin');
             exit();
         } else {
             $_SESSION['status'] = false;
             $_SESSION['errors'] = $user->errors;
-            header('Location: /signup');
+            header('Location: /admin');
             exit();
         }
     }

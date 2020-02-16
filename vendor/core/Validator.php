@@ -15,6 +15,24 @@ class Validator
         }
     }
 
+    public static function filter($filter, $color, $short_name)
+    {
+        $errors = [];
+
+        if (!self::validLogin($filter)) {
+            $errors[] = 'Некорректное имя фильтра. Допустимы латинские буквы и цифры от 1 до 10 символов';
+        }
+
+        if (!self::validLogin($color)) {
+            $errors[] = 'Некорректное имя цвета фильтра';
+        }
+
+        if (!self::validFilterShortName($short_name)) {
+            $errors[] = 'Некорректное имя для букв в кружочке. Допустимы литералы от 1 до 2 симоволов';
+        }
+        return $errors;
+    }
+
     public static function login($login, $password)
     {
         $errors = [];
@@ -67,6 +85,15 @@ class Validator
     private static function validLogin($login)
     {
         if (preg_match('#^[a-z0-9]{1,10}$#i', $login)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    private static function validFilterShortName($short_name)
+    {
+        if (preg_match('#^[a-zA-Zа-яА-ЯёЁ]{1,2}$#ui', $short_name)) {
             return true;
         } else {
             return false;

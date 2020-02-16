@@ -26,6 +26,7 @@ class View
     {
         extract($data);
         $file_view = APP . "/views/{$this->route['controller']}/{$this->view}.php";
+        $file_view = str_replace('\\', '/', $file_view);
         ob_start();
         if(file_exists($file_view)) {
             require $file_view;

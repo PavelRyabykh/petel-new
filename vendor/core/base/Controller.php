@@ -30,6 +30,6 @@ class Controller
 
     public function set(array $data)
     {
-        $this->data = $data;
+        $this->data = array_merge($data, $this->data);
     }
 }

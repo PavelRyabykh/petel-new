@@ -34,6 +34,7 @@ class User extends Model
         }
     }
 
+
     public function checkAuth()
     {
         if (isset($this->properties['login']) && isset($this->properties['password'])) {

@@ -37,11 +37,6 @@ class Url extends Model
         }
     }
 
-    public function delete($id)
-    {
-       return $this->query("DELETE FROM " . $this->table . " WHERE id=?", [$id]);
-    }
-
     public function deleteAll()
     {
         $this->deleteTable();

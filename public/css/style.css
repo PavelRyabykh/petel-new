@@ -49,6 +49,11 @@ header {
     border: 1px solid #269F6B;
 }
 
+.btn-primary:visited {
+    background: #269F6B;
+    border: 1px solid #269F6B;
+}
+
 .btn-danger {
     background: #FFC8B1;
     border: 1px solid #FFC8B1;

@@ -60,6 +60,11 @@ abstract class Model
         }
     }
 
+    public function delete($id)
+    {
+        return $this->query("DELETE FROM " . $this->table . " WHERE id=?", [$id]);
+    }
+
     public function findOneWhereAnd($params1, $params2)
     {
         $sql = "SELECT * FROM {$this->table} WHERE $params1[0] = ? AND $params2[0] = ?";

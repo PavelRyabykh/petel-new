@@ -7,7 +7,7 @@ namespace vendor\core;
 class Post
 {
     private $data = [];
-    private $legacyData = ['login', 'password', 'url', 'notformat', 'id', 'delall', 'color', 'up'];
+    private $legacyData = ['login', 'password', 'url', 'notformat', 'id', 'delall', 'color', 'up', 'short_name', 'filter', 'user'];
     public function __construct()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
