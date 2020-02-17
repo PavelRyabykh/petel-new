@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     Router::add('^addfilter', ['controller' => 'admin\\AddFilter', 'action' => 'index']);
     Router::add('^delfilter', ['controller' => 'admin\\Delfilter', 'action' => 'index']);
 } else {
-    Router::add('^$', ['controller' => 'Main', 'action' => 'Index']);
+    Router::add('^$', ['controller' => 'Main', 'action' => 'index']);
     Router::add('^login$', ['controller' => 'Login', 'action' => 'index']);
     Router::add('^signup$', ['controller' => 'admin\\Signup', 'action' => 'index']);
     Router::add('^logout$', ['controller' => 'Logout', 'action' => 'index']);

@@ -1,3 +1,6 @@
+<?php if(empty($filters)): ?>
+    <div class="alert alert-danger">Для данного workspace не создано ни одного фильтра</div>
+<?php endif; ?>
 <script>
     var filters = [
     <?php foreach ($filters as $filter): ?>
@@ -63,7 +66,7 @@
                         <button class="btn-primary" onclick="copyText('<?= $url['id'] ?>')">cp</button>
                     </div>
                     <div class="col-auto padding-2">
-                        <div class="color padding-2 mt-1" style="background: <?=$colors[$url['filter']] ?>"></div>
+                        <div class="color padding-2 mt-1" style="background: <?= $colors[$url['filter']] ?>"></div>
                     </div>
                     <div class="col-md-10 padding-2">
                         <div id="text-<?= $url['id'] ?>" class="content text-break">

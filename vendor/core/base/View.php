@@ -31,7 +31,7 @@ class View
         if(file_exists($file_view)) {
             require $file_view;
         } else {
-            print "<p></p>Вид <b>$file_view</b> не найден.</p>";
+            print "<p>Вид <b>$file_view</b> не найден.</p>";
         }
         $content = ob_get_clean();
         if(false !== $this->layout) {

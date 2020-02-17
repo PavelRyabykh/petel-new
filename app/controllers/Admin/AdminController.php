@@ -1,26 +1,25 @@
 <?php
 
 
-namespace app\controllers\admin;
+namespace app\controllers\Admin;
 
 
 use app\controllers\AppController;
-use app\models\Filter;
+use app\models\User;
 use vendor\core\Auth;
 
-class FiltersController extends MainAdminController
+class AdminController extends MainAdminController
 {
     public function indexAction()
     {
         Auth::faceControlForAdmin();
-        $filter = new Filter();
-        $user = $this->route['user'];
-        $filter->table = $user . '_filters';
-
+        $user = new User();
+        $users = $user->findAll();
+        unset($users[(count($users) - 1)]);
         if (isset($_SESSION['status'])) {
 
             if ($_SESSION['status'] === true) {
-                $successMessage = 'Фильтр успешно добавлен!';
+                $successMessage = 'Пользователь успешно добавлен!';
                 unset($_SESSION['status']);
                 $this->set(compact('successMessage'));
             } else {
@@ -31,7 +30,6 @@ class FiltersController extends MainAdminController
             }
 
         }
-        $filters = $filter->findAll();
-        $this->set(compact('user', 'filters'));
+        $this->set(compact('users'));
     }
 }

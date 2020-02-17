@@ -34,6 +34,7 @@ class MainController extends AppController
 
         $data = $url->findAll();
         $filters = $filter->findAll();
+        $colors = [];
         foreach ($filters as $filter) {
             $colors[$filter['filter']] = $filter['color'];
         }
@@ -46,8 +47,8 @@ class MainController extends AppController
         $url = new Url();
         $this->layout = false;
 
-        if (! ($errors = Validator::url($this->post->url)) && $this->post->filter !== null) {
-            if($this->post->notformat === 'on') {
+        if (!($errors = Validator::url($this->post->url)) && $this->post->filter !== null) {
+            if ($this->post->notformat === 'on') {
                 $url->url = htmlspecialchars($this->post->url);
             } else {
                 $url->url = ahrefer(htmlspecialchars($this->post->url));
@@ -56,20 +57,20 @@ class MainController extends AppController
         } else {
             $_SESSION['status'] = false;
             $_SESSION['errors'] = $url->errors;
-            header('Location: /#'.$this->post->filter);
+            header('Location: /#' . $this->post->filter);
             exit();
         }
 
         if ($url->add()) {
             $_SESSION['status'] = true;
-            header('Location: /#'.$this->post->filter);
+            header('Location: /#' . $this->post->filter);
             exit();
         } else {
             $_SESSION['status'] = false;
             $_SESSION['errors'] = $url->errors;
-            header('Location: /#'.$this->post->filter);
+            header('Location: /#' . $this->post->filter);
             exit();
         }
-        
+
     }
 }

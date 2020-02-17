@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\controllers\admin;
+namespace app\controllers\Admin;
 
 use app\models\Filter;
 use app\models\Url;

@@ -35,7 +35,7 @@ class ErrorHandler
 
     protected function displayError($errno, $errstr, $errfile, $errline, $response = 500)
     {
-        http_response_code($response);
+        http_response_code((int) $response);
         if ($response == 404 && !DEBUG) {
             include APP . '/views/404.html';
         } elseif (DEBUG) {

@@ -19,13 +19,13 @@ class Auth
 
     public static function faceControl($where = 'NotInLogin')
     {
-        if (self::$status === 1) {
+        if (self::$status == 1) {
             header('Location: /admin');
             exit();
-        } elseif (self::$user === null && $where !== 'login') {
+        } elseif (self::$user == null && $where != 'login') {
             header('Location: /login');
             exit();
-        } elseif (self::$user !== null && $where === 'login') {
+        } elseif (self::$user != null && $where == 'login') {
             return true;
         }
         return false;

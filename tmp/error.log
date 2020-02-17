@@ -3363,3 +3363,438 @@
 Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
 Строка: 66
 ==================================
+[2020-02-17 16:12:54]
+Текст ошибки: Call to undefined function exti()
+Файл: /home/pavel/pro/petel.loc/public/index.php
+Строка: 6
+==================================
+[2020-02-17 16:12:54]
+Текст ошибки: Call to undefined function exti()
+Файл: /home/pavel/pro/petel.loc/public/index.php
+Строка: 6
+==================================
+[2020-02-17 16:20:21]
+Текст ошибки: Паттерн маршрута /login не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 16:20:21]
+Текст ошибки: Паттерн маршрута /favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 16:21:21]
+Текст ошибки: Паттерн маршрута /aaa не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 16:22:25]
+Текст ошибки: Контроллер <b>app\controllers\Admin\AdminController</b> не найден
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 63
+==================================
+[2020-02-17 16:24:21]
+Текст ошибки: Class 'app\controllers\admin\MainAdminController' not found
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/AdminController.php
+Строка: 11
+==================================
+[2020-02-17 16:24:31]
+Текст ошибки: Class 'app\controllers\admin\MainAdminController' not found
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/AdminController.php
+Строка: 11
+==================================
+[2020-02-17 16:24:55]
+Текст ошибки: Class 'app\controllers\admin\MainAdminController' not found
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/AdminController.php
+Строка: 11
+==================================
+[2020-02-17 16:24:59]
+Текст ошибки: Class 'app\controllers\admin\MainAdminController' not found
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/AdminController.php
+Строка: 11
+==================================
+[2020-02-17 16:27:08]
+Текст ошибки: Class 'app\controllers\admin\MainAdminController' not found
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/AdminController.php
+Строка: 11
+==================================
+[2020-02-17 16:27:41]
+Текст ошибки: Контроллер <b>app\controllers\Admin\AdminController</b> не найден
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 63
+==================================
+[2020-02-17 16:28:50]
+Текст ошибки: Class 'app\controllers\admin\MainAdminController' not found
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/AdminController.php
+Строка: 11
+==================================
+[2020-02-17 16:30:46]
+Текст ошибки: Паттерн маршрута adminuserssky не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 16:31:04]
+Текст ошибки: Паттерн маршрута adminuserssky не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 16:31:57]
+Текст ошибки: trim() expects at most 2 parameters, 4 given
+Файл: /home/pavel/pro/petel.loc/public/index.php
+Строка: 6
+==================================
+[2020-02-17 16:32:18]
+Текст ошибки: Use of undefined constant _SERVER - assumed '_SERVER' (this will throw an Error in a future version of PHP)
+Файл: /home/pavel/pro/petel.loc/public/index.php
+Строка: 6
+==================================
+[2020-02-17 16:54:59]
+Текст ошибки: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F' for column 'short_name' at row 1
+Файл: /home/pavel/pro/petel.loc/vendor/core/Db.php
+Строка: 36
+==================================
+[2020-02-17 16:54:59]
+Текст ошибки: http_response_code() expects parameter 1 to be int, string given
+Файл: /home/pavel/pro/petel.loc/vendor/core/ErrorHandler.php
+Строка: 38
+==================================
+[2020-02-17 16:57:16]
+Текст ошибки: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F' for column 'short_name' at row 1
+Файл: /home/pavel/pro/petel.loc/vendor/core/Db.php
+Строка: 36
+==================================
+[2020-02-17 16:57:44]
+Текст ошибки: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F' for column 'short_name' at row 1
+Файл: /home/pavel/pro/petel.loc/vendor/core/Db.php
+Строка: 36
+==================================
+[2020-02-17 16:58:42]
+Текст ошибки: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F' for column 'short_name' at row 1
+Файл: /home/pavel/pro/petel.loc/vendor/core/Db.php
+Строка: 36
+==================================
+[2020-02-17 17:16:58]
+Текст ошибки: Паттерн маршрута admin/users не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 17:18:46]
+Текст ошибки: compact(): Undefined variable: colors
+Файл: /home/pavel/pro/petel.loc/app/controllers/MainController.php
+Строка: 40
+==================================
+[2020-02-17 17:21:34]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 66
+==================================
+[2020-02-17 17:24:40]
+Текст ошибки: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Файл: /home/pavel/pro/petel.loc/app/controllers/MainController.php
+Строка: 43
+==================================
+[2020-02-17 17:25:06]
+Текст ошибки: Undefined variable: filters
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 6
+==================================
+[2020-02-17 17:25:06]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 17:27:06]
+Текст ошибки: Паттерн маршрута loguot не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 17:27:28]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:28:55]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:32:21]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:39:39]
+Текст ошибки: file_put_contents(/yaudaly.txt): failed to open stream: Permission denied
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/DelfilterController.php
+Строка: 19
+==================================
+[2020-02-17 17:49:28]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:49:55]
+Текст ошибки: Call to undefined function app\controllers\Admin\deleteByFilter()
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/DelfilterController.php
+Строка: 21
+==================================
+[2020-02-17 17:50:18]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 17:51:00]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:52:32]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:53:33]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:53:35]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:53:39]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:53:41]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:54:22]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:55:31]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 17:58:34]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:11:13]
+Текст ошибки: file_put_contents(/test.txt): failed to open stream: Permission denied
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/DelfilterController.php
+Строка: 21
+==================================
+[2020-02-17 18:12:53]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 18:12:54]
+Текст ошибки: file_put_contents(/test.txt): failed to open stream: Permission denied
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/DelfilterController.php
+Строка: 21
+==================================
+[2020-02-17 18:12:56]
+Текст ошибки: file_put_contents(/test.txt): failed to open stream: Permission denied
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/DelfilterController.php
+Строка: 21
+==================================
+[2020-02-17 18:13:43]
+Текст ошибки: file_put_contents(/public/test.txt): failed to open stream: No such file or directory
+Файл: /home/pavel/pro/petel.loc/app/controllers/Admin/DelfilterController.php
+Строка: 21
+==================================
+[2020-02-17 18:15:54]
+Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'petel.admin' doesn't exist
+Файл: /home/pavel/pro/petel.loc/vendor/core/Db.php
+Строка: 36
+==================================
+[2020-02-17 18:15:56]
+Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'petel.admin' doesn't exist
+Файл: /home/pavel/pro/petel.loc/vendor/core/Db.php
+Строка: 36
+==================================
+[2020-02-17 18:17:24]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 18:18:05]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:18:13]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:19:23]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:19:38]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:19:42]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:19:44]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:19:45]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:22:07]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:22:18]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:22:59]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:23:29]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:28:05]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:28:54]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:28:56]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 72
+==================================
+[2020-02-17 18:29:16]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 73
+==================================
+[2020-02-17 18:29:38]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 73
+==================================
+[2020-02-17 18:29:38]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 18:31:01]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 73
+==================================
+[2020-02-17 18:32:13]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 73
+==================================
+[2020-02-17 18:37:02]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 18:37:18]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 67
+==================================
+[2020-02-17 18:37:28]
+Текст ошибки: Undefined index: pavel
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 67
+==================================
+[2020-02-17 18:37:42]
+Текст ошибки: Undefined index: andrey
+Файл: /home/pavel/pro/petel.loc/app/views/Main/index.php
+Строка: 67
+==================================
+[2020-02-17 18:39:35]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 18:40:30]
+Текст ошибки: compact(): Undefined variable: colors
+Файл: /home/pavel/pro/petel.loc/app/controllers/MainController.php
+Строка: 40
+==================================
+[2020-02-17 18:42:42]
+Текст ошибки: compact(): Undefined variable: colors
+Файл: /home/pavel/pro/petel.loc/app/controllers/MainController.php
+Строка: 40
+==================================
+[2020-02-17 18:43:24]
+Текст ошибки: compact(): Undefined variable: colors
+Файл: /home/pavel/pro/petel.loc/app/controllers/MainController.php
+Строка: 40
+==================================
+[2020-02-17 18:43:25]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 18:43:26]
+Текст ошибки: compact(): Undefined variable: colors
+Файл: /home/pavel/pro/petel.loc/app/controllers/MainController.php
+Строка: 40
+==================================
+[2020-02-17 18:43:27]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 18:43:46]
+Текст ошибки: compact(): Undefined variable: colors
+Файл: /home/pavel/pro/petel.loc/app/controllers/MainController.php
+Строка: 40
+==================================
+[2020-02-17 18:43:46]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: /home/pavel/pro/petel.loc/vendor/core/Router.php
+Строка: 66
+==================================
+[2020-02-17 18:44:11]
+Текст ошибки: compact(): Undefined variable: colors
+Файл: /home/pavel/pro/petel.loc/app/controllers/MainController.php
+Строка: 40
+==================================
+[2020-02-17 18:44:12]
+Текст ошибки: compact(): Undefined variable: colors
+Файл: /home/pavel/pro/petel.loc/app/controllers/MainController.php
+Строка: 40
+==================================
