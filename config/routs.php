@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     Router::add('^signup$', ['controller' => 'admin\\Signup', 'action' => 'addUser']);
     Router::add('^delurl$', ['controller' => 'Delurl', 'action' => 'index']);
     Router::add('^delall$', ['controller' => 'Delall', 'action' => 'index']);
-    Router::add('^delbycolor$', ['controller' => 'Delbycolor', 'action' => 'index']);
+    Router::add('^delbyfilter$', ['controller' => 'Delbyfilter', 'action' => 'index']);
     Router::add('^up$', ['controller' => 'Up', 'action' => 'index']);
     Router::add('^deluser', ['controller' => 'admin\\Deluser', 'action' => 'index']);
     Router::add('^addfilter', ['controller' => 'admin\\AddFilter', 'action' => 'index']);
@@ -21,5 +21,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     Router::add('^signup$', ['controller' => 'admin\\Signup', 'action' => 'index']);
     Router::add('^logout$', ['controller' => 'Logout', 'action' => 'index']);
     Router::add('^admin$', ['controller' => 'admin\\Admin', 'action' => 'index']);
-    Router::add('^admin/users/(?<user>[a-z-]+)$', ['controller' => 'admin\\Filters', 'action' => 'index']);
+    Router::add('^admin/users/(?<user>[a-z0-9-]+)$', ['controller' => 'admin\\Filters', 'action' => 'index']);
 }

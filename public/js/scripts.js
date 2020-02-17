@@ -1,10 +1,18 @@
 var currentFilter = 'all';
-
-function clickToColorHandler(filter) {
-    var inputText = document.getElementById("input-url");
-    if (inputText.value != '') {
-        return;
+window.onload = function() {
+    for (var i = 0; i < filters.length; i++) {
+        if (location.hash == '#' + filters[i]) {
+            var elem = document.getElementById('radio__' + filters[i]).checked = true;
+            clickToColorHandler(filters[i]);
+        }
     }
+};
+function clickToColorHandler(filter) {
+    location.hash = filter;
+    // var inputText = document.getElementById("input-url");
+    // if (inputText.value != '') {
+    //     return;
+    // }
     reset();
     currentFilter = filter;
     document.getElementById('delete-in-header').innerHTML = "Удалить отображаемые";
@@ -19,6 +27,7 @@ function clickToColorHandler(filter) {
 }
 
 function clearFiltersConfiguration() {
+    location.hash = '';
     var radios = document.getElementsByClassName('color-radio');
 
     for (var x = 0; x < radios.length; x++) {

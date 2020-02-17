@@ -43,9 +43,9 @@ class Url extends Model
         $this->createTable();
     }
 
-    public function deleteByColor($color)
+    public function deleteByFilter($filter)
     {
-        return $this->query("DELETE FROM " . $this->table . " WHERE color=?", [$color]);
+        return $this->query("DELETE FROM " . $this->table . " WHERE filter=?", [$filter]);
     }
 
     public function createTable()

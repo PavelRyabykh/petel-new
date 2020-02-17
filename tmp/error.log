@@ -3048,3 +3048,318 @@
 Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
 Строка: 66
 ==================================
+[2020-02-16 21:36:29]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-16 21:38:59]
+Текст ошибки: Undefined index: color
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\app\controllers\UpController.php
+Строка: 21
+==================================
+[2020-02-16 21:39:05]
+Текст ошибки: Undefined index: color
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\app\controllers\UpController.php
+Строка: 21
+==================================
+[2020-02-17 10:32:11]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 10:32:57]
+Текст ошибки: Undefined index: color
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\app\controllers\UpController.php
+Строка: 21
+==================================
+[2020-02-17 10:35:50]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 10:37:47]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 10:38:14]
+Текст ошибки: Call to undefined method vendor\core\Validator::color()
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\app\controllers\DelbycolorController.php
+Строка: 18
+==================================
+[2020-02-17 10:43:04]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 10:45:08]
+Текст ошибки: Паттерн маршрута admin/users/sky2 не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 10:45:51]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 10:48:12]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 10:49:30]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:04:59]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:06:12]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:08:08]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:08:45]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:09:56]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:10:34]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:10:51]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:12:17]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:12:26]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:12:38]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:13:06]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:14:27]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:15:56]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:16:09]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:25:06]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:26:00]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:26:39]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:27:11]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:31:25]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:32:10]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:32:43]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:38:12]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:39:22]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:41:22]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:42:31]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:47:31]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:55:26]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:57:10]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 11:59:27]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:00:09]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:02:03]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:03:18]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:09:18]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:10:51]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:10:56]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:11:19]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:13:41]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:14:00]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:14:48]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:15:08]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:17:41]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:21:07]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:23:01]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:24:10]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:24:27]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:27:32]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:28:33]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:31:47]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:33:01]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================
+[2020-02-17 12:34:14]
+Текст ошибки: Паттерн маршрута favicon.ico не описан
+Файл: C:\Users\prkur\Desktop\OSPanel\domains\petel.loc\vendor\core\Router.php
+Строка: 66
+==================================

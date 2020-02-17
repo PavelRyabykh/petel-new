@@ -18,7 +18,7 @@ class UpController extends AppController
         if ($data) {
             $url->delete($this->post->up);
             $url->url = $data['url'];
-            $url->color = $data['color'];
+            $url->filter = $data['filter'];
             $url->add();
             header('Location: /');
         }

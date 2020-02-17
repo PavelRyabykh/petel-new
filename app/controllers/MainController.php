@@ -56,18 +56,18 @@ class MainController extends AppController
         } else {
             $_SESSION['status'] = false;
             $_SESSION['errors'] = $url->errors;
-            header('Location: /');
+            header('Location: /#'.$this->post->filter);
             exit();
         }
 
         if ($url->add()) {
             $_SESSION['status'] = true;
-            header('Location: /');
+            header('Location: /#'.$this->post->filter);
             exit();
         } else {
             $_SESSION['status'] = false;
             $_SESSION['errors'] = $url->errors;
-            header('Location: /');
+            header('Location: /#'.$this->post->filter);
             exit();
         }
         

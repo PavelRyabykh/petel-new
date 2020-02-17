@@ -50,7 +50,7 @@
                         <input type="text" name="filter" placeholder="Имя фильтра" class="form-control">
                     </div>
                     <div class="form-group">
-                        <input type="text" name="color" placeholder="Цвет. Например, #ffffff, white" class="form-control">
+                        <input type="text" name="color" placeholder="Цвет. Например, #55BF95, blue" class="form-control">
                     </div>
                     <div class="form-group">
                         <input type="text" name="short_name" placeholder="Две или одна буква в кружок" class="form-control">

@@ -1,8 +1,8 @@
 function deleteUrls() {
-    if (currentColor == "all") {
+    if (currentFilter == "all") {
         delall();
     } else {
-        deleteUrlsByColor(currentColor);
+        deleteUrlsByFilter(currentFilter);
     }
 }
 
@@ -41,10 +41,10 @@ function delall() {
     document.location = '/';
 }
 
-function deleteUrlsByColor(color) {
+function deleteUrlsByFilter(filter) {
     const request = new XMLHttpRequest();
-    const url = "/delbycolor";
-    const params = "color=" + color;
+    const url = "/delbyfilter";
+    const params = "filter=" + filter;
     request.open("POST", url, true);
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     request.send(params);

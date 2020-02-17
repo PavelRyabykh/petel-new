@@ -69,6 +69,7 @@ Radio buttons
  */
 .wrap__colors {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .color-radio {
@@ -78,6 +79,7 @@ Radio buttons
 .radio__input {
     position: relative;
     margin-right: 5px;
+    margin-bottom: .25rem!important;
     width: 40px;
     height: 40px;
 }
@@ -89,6 +91,10 @@ Radio buttons
     border-radius: 20px;
     position: absolute;
     opacity: .7;
+}
+
+.radio__label:hover {
+    cursor: pointer;
 }
 
 .admin__filter {
@@ -164,5 +170,12 @@ End radio buttons
     .admin__filter, .clear__button {
         width: 37px!important;
         height: 37px!important;
+    }
+    .clear__button {
+        margin-right: 0;
+    }
+
+    .radio__input {
+        margin-right: 3px;
     }
 }

@@ -26,7 +26,7 @@
             </div>
 
             <!--        Радио-кноки переключения/выбора цветов-->
-            <div class="col-md-auto mb-2 padding-5">
+            <div class="col-md-auto mb-1 padding-5">
                 <div class="wrap__colors">
                     <?php foreach ($filters as $filter): ?>
                         <div class="radio__input">
