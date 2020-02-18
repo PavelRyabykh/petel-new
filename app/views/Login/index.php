@@ -11,6 +11,7 @@
             <?php endif; ?>
 
             <form method="POST" action="/login">
+                <?= csrfToken() ?>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Имя</label>
                     <input type="text" name="login" placeholder="login" class="form-control">

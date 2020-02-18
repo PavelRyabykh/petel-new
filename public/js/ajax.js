@@ -9,7 +9,7 @@ function deleteUrls() {
 function deleteUrl(id) {
     const request = new XMLHttpRequest();
     const url = "/delurl";
-    const params = "id=" + id;
+    const params = "id=" + id + "&token=" + token;
     request.open("POST", url, true);
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     request.send(params);
@@ -20,7 +20,7 @@ function deleteUrl(id) {
 function upUrl(id) {
     const request = new XMLHttpRequest();
     const url = "/up";
-    const params = "up=" + id;
+    const params = "up=" + id + "&token=" + token;
     request.open("POST", url, true);
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     request.send(params);
@@ -34,19 +34,19 @@ function upUrl(id) {
 function delall() {
     const request = new XMLHttpRequest();
     const url = "/delall";
-    const params = "delall=on";
+    const params = "delall=on&token=" + token;
     request.open("POST", url, true);
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     request.send(params);
-    document.location = '/';
+    //document.location = '/';
 }
 
 function deleteUrlsByFilter(filter) {
     const request = new XMLHttpRequest();
     const url = "/delbyfilter";
-    const params = "filter=" + filter;
+    const params = "filter=" + filter + "&token=" + token;
     request.open("POST", url, true);
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     request.send(params);
-    document.location = '/';
+    //document.location = '/';
 }

@@ -15,6 +15,5 @@ class DelallController extends AppController
         $url = new Url();
         $this->layout = false;
         $url->deleteAll();
-        header('Location: /');
     }
 }

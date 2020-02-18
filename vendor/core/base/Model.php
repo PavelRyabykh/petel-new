@@ -62,7 +62,11 @@ abstract class Model
 
     public function delete($id)
     {
-        return $this->query("DELETE FROM " . $this->table . " WHERE id=?", [$id]);
+        if ($this->findOne($id)) {
+            return $this->query("DELETE FROM " . $this->table . " WHERE id=?", [$id]);
+        } elseif ($this->findOne($id, 'old_id')) {
+            return $this->query("DELETE FROM " . $this->table . " WHERE old_id=?", [$id]);
+        }
     }
 
     public function findOneWhereAnd($params1, $params2)

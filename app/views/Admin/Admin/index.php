@@ -43,6 +43,7 @@
             </div>
             <div class="modal-body">
                 <form method="POST" action="/signup">
+                    <?= csrfToken() ?>
                     <div class="form-group">
                         <input type="text" name="login" placeholder="name" class="form-control">
                     </div>

@@ -14,13 +14,14 @@ class UpController extends AppController
         Auth::faceControl();
         $this->layout = false;
         $url = new Url();
-        $data = $url->findOne($this->post->up);
-        if ($data) {
-            $url->delete($this->post->up);
+        if ($url->findOne($this->post->up)) {
+            $data = $url->findOne($this->post->up);
+        } elseif ($url->findOne($this->post->up, 'old_id')) {
+            $data = $url->findOne($this->post->up, 'old_id');
+        }
             $url->url = $data['url'];
             $url->filter = $data['filter'];
+            $url->old_id = $data['id'];
             $url->add();
-            header('Location: /');
-        }
     }
 }

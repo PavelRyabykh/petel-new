@@ -13,6 +13,9 @@
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
+
+        <a class="btn btn-dark mt-1 mb-1" href="/admin">Назад</a>
+
         <div class="card-header">
             <b>Фильтры</b> для <?=$user ?>
         </div>
@@ -46,6 +49,7 @@
             </div>
             <div class="modal-body">
                 <form method="POST" action="/addfilter">
+                    <?= csrfToken() ?>
                     <div class="form-group">
                         <input type="text" name="filter" placeholder="Имя фильтра" class="form-control">
                     </div>
@@ -54,8 +58,9 @@
                     </div>
                     <div class="form-group">
                         <input type="text" name="short_name" placeholder="Две или одна буква в кружок" class="form-control">
-                        <input type="hidden" name="user" value="<?=$user ?>"
+                        <input type="hidden" name="user" value="<?=$user ?>">
                     </div>
+
                     <input type="submit" class="btn btn-primary" value="Добавить">
                 </form>
             </div>

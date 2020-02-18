@@ -13,6 +13,7 @@
     <?php endif; ?>
 
     <form method="POST" action="/signup">
+        <?= csrfToken() ?>
         <input type="text" name="login" placeholder="login"><br>
         <input type="password" name="password" placeholder="password"><br>
         <input type="submit"><br>

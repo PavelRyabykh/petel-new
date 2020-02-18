@@ -6,11 +6,13 @@
     <?php foreach ($filters as $filter): ?>
      '<?=$filter['filter'] ?>',
     <?php endforeach ?>
-    ]
+    ];
+    var token = '<?= csrfToken('only_value') ?>';
 </script>
 <header class="mb-3">
     <div class="container-lg">
         <form method="POST" class="row pt-2" action="/">
+            <?= csrfToken() ?>
             <!--    Инпут добавления и чекбокс-->
             <div class="col-md-3 mb-2 padding-5">
                 <div class="input-group">
@@ -33,7 +35,7 @@
                 <div class="wrap__colors">
                     <?php foreach ($filters as $filter): ?>
                         <div class="radio__input">
-                            <input required type="radio" id="radio__<?= $filter['filter'] ?>" class="color-radio" name="filter"
+                            <input type="radio" id="radio__<?= $filter['filter'] ?>" class="color-radio" name="filter"
                                    value="<?= $filter['filter'] ?>" onclick="clickToColorHandler('<?= $filter['filter'] ?>')">
                             <label class="radio__label admin__filter" for="radio__<?= $filter['filter'] ?>"
                                    style="background: <?= $filter['color'] ?>"><span
@@ -45,7 +47,7 @@
             </div>
             <div class="col-md-auto mb-2 padding-5">
                 <!--            Кнопка добавления-->
-                <button class="btn btn-primary">Добавить</button>
+                <button id="add_button" class="btn btn-secondary" disabled>Выбери фильтр</button>
             </div>
 
             <div class="col-auto mb-2 ml-lg-auto pt-1 padding-5">

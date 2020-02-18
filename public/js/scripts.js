@@ -1,4 +1,5 @@
 var currentFilter = 'all';
+var btn = document.getElementById('add_button');
 window.onload = function() {
     for (var i = 0; i < filters.length; i++) {
         if (location.hash == '#' + filters[i]) {
@@ -8,11 +9,10 @@ window.onload = function() {
     }
 };
 function clickToColorHandler(filter) {
+    btn.innerHTML = 'Добавить';
+    btn.className = 'btn btn-primary';
+    btn.disabled = false;
     location.hash = filter;
-    // var inputText = document.getElementById("input-url");
-    // if (inputText.value != '') {
-    //     return;
-    // }
     reset();
     currentFilter = filter;
     document.getElementById('delete-in-header').innerHTML = "Удалить отображаемые";
@@ -28,6 +28,9 @@ function clickToColorHandler(filter) {
 
 function clearFiltersConfiguration() {
     location.hash = '';
+    btn.innerHTML = 'Выбери фильтр';
+    btn.className = 'btn btn-secondary';
+    btn.disabled = true;
     var radios = document.getElementsByClassName('color-radio');
 
     for (var x = 0; x < radios.length; x++) {

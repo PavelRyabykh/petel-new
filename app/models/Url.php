@@ -14,6 +14,7 @@ class Url extends Model
         'id' => null,
         'url' => null,
         'filter' => null,
+        'old_id' => 0
     ];
 
     public function __construct()
@@ -30,7 +31,7 @@ class Url extends Model
         }
 
         if (isset($this->properties['url'])) {
-            $this->query("INSERT INTO " . $this->table . " (url, filter) VALUES (?,?)", [$this->properties['url'], $this->properties['filter']]);
+            $this->query("INSERT INTO " . $this->table . " (url, filter, old_id) VALUES (?,?,?)", [$this->properties['url'], $this->properties['filter'], $this->properties['old_id']]);
             return true;
         } else {
             throw new \Exception("Попытка записать в БД недозаполненную модель Url");
@@ -53,7 +54,8 @@ class Url extends Model
         $sql = "CREATE TABLE " . $this->table . " (
                 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                 url TEXT NOT NULL,
-                filter VARCHAR(10) NOT NULL
+                filter VARCHAR(10) NOT NULL,
+                old_id INT NOT NULL DEFAULT 0
 )";
         $this->query($sql, []);
     }

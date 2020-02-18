@@ -17,9 +17,6 @@ class DelurlController extends AppController
         $this->layout = false;
         if (Validator::integer($this->post->id)) {
             $url->delete($this->post->id);
-            //header('Location: /');
-        } else {
-            //header('Location: /');
         }
     }
 }
