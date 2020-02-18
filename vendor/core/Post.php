@@ -11,8 +11,11 @@ class Post
     public function __construct()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            if (! (isset($_SESSION['token']) && isset($_POST['token']) && $_SESSION['token'] == $_POST['token']))          {
-                throw new \Exception("Передача POST данных c некорректным токеном. Передан {$_POST['token']} ожидается {$_SESSION['token']}");
+            if (! (isset($_SESSION['token']) && isset($_POST['token']) && $_SESSION['token'] == $_POST['token']))
+            {
+                $post_token = $_POST['token'] ?? 'null';
+                $session_token = $_SESSION['token'] ?? 'null';
+                throw new \Exception("Передача POST данных c некорректным токеном. Передан {$post_token} ожидается {$session_token}");
             }
             $this->data = $_POST;
             foreach ($this->data as $k => $v) {
