@@ -18,3 +18,8 @@
 Файл: /home/pavel/pro/petel.loc/vendor/core/Post.php
 Строка: 18
 ==================================
+[2020-02-19 17:45:19]
+Текст ошибки: preg_replace(): Unknown modifier 'd'
+Файл: /home/pavel/pro/petel.loc/vendor/libs/functions.php
+Строка: 24
+==================================

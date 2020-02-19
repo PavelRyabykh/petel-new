@@ -20,8 +20,10 @@ function ahrefer($str)
     });
     $matches[0] = array_unique($matches[0]);
     foreach ($matches[0] as $value) {
-        $str = preg_replace('`(?<!://)' . str_replace(['.', '`', '?'], ['\.', '\`', '\?'], $value) . '`i', '<a target="_balnk" href="' . $value . '">' . $value . '</a>', $str);
+
+        $str = preg_replace('#(?<!://)' . preg_quote($value) . '#i', '<a target="_balnk" href="' . $value . '">' . $value . '</a>', $str);
     }
+    //print $str; exit();
     $str = str_replace('href="www.', 'href="http://www.', $str);
     return $str;
 }

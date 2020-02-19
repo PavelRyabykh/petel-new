@@ -1,1 +1,1 @@
-a:2:{s:4:"data";a:2:{s:7:"filters";a:0:{}s:6:"colors";a:0:{}}s:8:"end_time";i:1613647098;}
+a:2:{s:4:"data";a:2:{s:7:"filters";a:1:{i:0;a:4:{s:2:"id";s:1:"4";s:6:"filter";s:5:"pavel";s:5:"color";s:4:"blue";s:10:"short_name";s:2:"П";}}s:6:"colors";a:1:{s:5:"pavel";s:4:"blue";}}s:8:"end_time";i:1613657282;}
