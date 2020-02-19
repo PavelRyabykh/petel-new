@@ -5,6 +5,7 @@ namespace app\controllers\Admin;
 
 
 use app\models\Filter;
+use vendor\core\App;
 use vendor\core\Auth;
 use vendor\core\Validator;
 
@@ -29,6 +30,7 @@ class AddFilterController extends MainAdminController
 
         if ($filter->add()) {
             $_SESSION['status'] = true;
+            App::$app->cache->delete($this->post->user);
             header('Location: ' . $_SERVER['HTTP_REFERER']);
             exit();
         } else {

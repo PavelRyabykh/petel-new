@@ -15,7 +15,7 @@ class Post
             {
                 $post_token = $_POST['token'] ?? 'null';
                 $session_token = $_SESSION['token'] ?? 'null';
-                throw new \Exception("Передача POST данных c некорректным токеном. Передан {$post_token} ожидается {$session_token}");
+                throw new \Exception("Передача POST данных c некорректным токеном. Передан {$post_token} ожидается {$session_token}", 403);
             }
             $this->data = $_POST;
             foreach ($this->data as $k => $v) {

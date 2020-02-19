@@ -38,6 +38,8 @@ class ErrorHandler
         http_response_code((int) $response);
         if ($response == 404 && !DEBUG) {
             include APP . '/views/404.html';
+        } elseif ($response == 403) {
+            require APP . '/views/403.php';
         } elseif (DEBUG) {
             require APP . '/views/dev.php';
         } else {

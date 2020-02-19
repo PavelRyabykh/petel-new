@@ -5,6 +5,7 @@ namespace app\controllers;
 
 use app\models\Filter;
 use app\models\Url;
+use vendor\core\App;
 use vendor\core\Auth;
 use vendor\core\Validator;
 
@@ -31,12 +32,17 @@ class MainController extends AppController
             }
 
         }
-
         $data = $url->findAll();
-        $filters = $filter->findAll();
-        $colors = [];
-        foreach ($filters as $filter) {
-            $colors[$filter['filter']] = $filter['color'];
+        if (! ($cache = App::$app->cache->get(Auth::getUser()))) {
+            $filters = $filter->findAll();
+            $colors = [];
+            foreach ($filters as $filter) {
+                $colors[$filter['filter']] = $filter['color'];
+            }
+            App::$app->cache->set(Auth::getUser(), ['filters' => $filters, 'colors' => $colors], 3600 * 24 * 365);
+        } else {
+            $filters = $cache['filters'];
+            $colors = $cache['colors'];
         }
         $this->set(compact('data', 'filters', 'colors'));
     }

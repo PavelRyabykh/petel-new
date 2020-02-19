@@ -6,6 +6,7 @@ namespace app\controllers\Admin;
 
 use app\models\Filter;
 use app\models\Url;
+use vendor\core\App;
 use vendor\core\Auth;
 
 class DelfilterController extends MainAdminController
@@ -21,5 +22,6 @@ class DelfilterController extends MainAdminController
         $filterName = ($filter->findOne($this->post->id))['filter'];
         $url->deleteByFilter($filterName);
         $filter->delete($this->post->id);
+        App::$app->cache->delete($this->post->workspace);
     }
 }

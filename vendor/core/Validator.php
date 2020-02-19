@@ -23,9 +23,14 @@ class Validator
             $errors[] = 'Некорректное имя фильтра. Допустимы латинские буквы и цифры от 1 до 10 символов';
         }
 
+        if (!self::required($color)) {
+            $errors[] = 'Поле цвет обязательно для заполнения';
+        }
+
         if (!self::validFilterShortName($short_name)) {
             $errors[] = 'Некорректное имя для букв в кружочке. Допустимы литералы от 1 до 2 симоволов';
         }
+
         return $errors;
     }
 
@@ -104,6 +109,14 @@ class Validator
         } else {
             return false;
         }
+    }
+
+    private static function required($str)
+    {
+        if (is_null($str) || strlen($str) === 0) {
+            return false;
+        }
+        return true;
     }
 
 

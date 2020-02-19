@@ -7,7 +7,7 @@ define('APP', dirname(__DIR__) . '/app');
 define('LIBS', dirname(__DIR__) . '/vendor/libs');
 define('CACHE', dirname(__DIR__) . '/tmp/cache');
 define('LAYOUT', 'default');
-define('DEBUG', 1);
+define('DEBUG', 0);
 
 spl_autoload_register(function($class) {
     $file = ROOT . '/' . str_replace('\\', '/', $class) . '.php';
