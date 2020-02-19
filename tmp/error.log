@@ -13,3 +13,8 @@
 Файл: /home/pavel/pro/petel.loc/vendor/core/Validator.php
 Строка: 116
 ==================================
+[2020-02-19 16:36:03]
+Текст ошибки: Передача POST данных c некорректным токеном. Передан b7b15a3fe4dbabbd010e70838547a9fd ожидается null
+Файл: /home/pavel/pro/petel.loc/vendor/core/Post.php
+Строка: 18
+==================================

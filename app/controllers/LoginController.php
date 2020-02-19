@@ -40,7 +40,7 @@ class LoginController extends AppController
         $user = new User();
         $this->layout = false;
         if (! ($errors = Validator::login($this->post->login, $this->post->password))) {
-            $user->login = htmlspecialchars($this->post->login);
+            $user->login = trim(strtolower(htmlspecialchars($this->post->login)));
             $user->password = $this->post->password;
         } else {
             $_SESSION['status'] = false;
